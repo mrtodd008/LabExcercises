@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A webpage showcasing HTML elements." />
+    <meta name="keywords" content="HTML, CSS, JavaScript, learning" />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Page Title</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse; /* Optional for a cleaner look */
+        padding: 8px; /* Optional for better spacing */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My HTML Learning Journey</h1>
+
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+      <!-- Previous content -->
+    </article>
+
+    <article>
+      <h2>Understanding HTML Tables</h2>
+      <!-- Table content -->
+    </article>
+
+    <article>
+      <h2>Multimedia Elements</h2>
+      <!-- Multimedia content -->
+    </article>
+
+    <article>
+      <h2>Feedback Form</h2>
+      <form method="POST" action="http://127.0.0.1:5500/form">
+        <div>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+
+        <div>
+          <p>Favorite Coding Language:</p>
+          <label>
+            <input type="radio" name="coding-language" value="html" required />
+            HTML </label
+          ><br />
+          <label>
+            <input type="radio" name="coding-language" value="css" />
+            CSS </label
+          ><br />
+          <label>
+            <input type="radio" name="coding-language" value="javascript" />
+            JavaScript
+          </label>
+        </div>
+
+        <div>
+          <p>Types of Vehicles Owned:</p>
+          <label>
+            <input type="checkbox" name="vehicle" value="car" /> Car </label
+          ><br />
+          <label>
+            <input type="checkbox" name="vehicle" value="motorcycle" />
+            Motorcycle </label
+          ><br />
+          <label>
+            <input type="checkbox" name="vehicle" value="bicycle" /> Bicycle
+          </label>
+        </div>
+
+        <div>
+          <label for="car-brand">Select your car brand:</label>
+          <select id="car-brand" name="car-brand">
+            <option value="toyota">Toyota</option>
+            <option value="honda">Honda</option>
+            <option value="ford">Ford</option>
+            <option value="tesla">Tesla</option>
+          </select>
+        </div>
+
+        <button type="submit">Submit form</button>
+      </form>
+    </article>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

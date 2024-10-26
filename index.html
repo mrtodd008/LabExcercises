@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A brief description of your webpage." />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse; /* Optional for a cleaner look */
+        padding: 8px; /* Optional for better spacing */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My HTML Learning Journey</h1>
+
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+
+      <div class="display: inline-block; margin-right: 10px">HTML</div>
+      <div class="display: inline-block; margin-right: 10px">CSS</div>
+      <div class="display: inline-block">JavaScript</div>
+
+      <br /><br />
+      <!-- Line break for spacing -->
+
+      <span class="margin-right: 10px">Inline 1</span>
+      <span class="margin-right: 10px">Inline 2</span>
+      <span>Inline 3</span>
+
+      <br /><br />
+
+      <p>p represents paragraph without preserving spacing</p>
+      <pre>
+Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+    </pre
+      >
+
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>
+          Fourth item
+          <ul>
+            <li>Nested item 1</li>
+            <li>Nested item 2</li>
+          </ul>
+        </li>
+      </ul>
+
+      <ol>
+        <li>First ordered item</li>
+        <li>Second ordered item</li>
+        <li>Third ordered item</li>
+      </ol>
+    </article>
+
+    <article>
+      <h2>Understanding HTML Tables</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Header</th>
+            <!-- Adjusted colspan for two columns -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Rowspan cell</td>
+            <!-- Rowspan attribute added -->
+            <td>Second cell - second row</td>
+          </tr>
+          <tr>
+            <td>Second cell - third row</td>
+            <!-- Adjusted to maintain column count -->
+          </tr>
+          <tr>
+            <td>Third row - first cell</td>
+            <td>Third row - second cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/form.html">Form</a>
+      </nav>
+    </header>
+
+    <main></main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>
