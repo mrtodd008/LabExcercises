@@ -1,0 +1,187 @@
+/* Type Selector */
+.class {
+  margin: 20px;
+  margin: 10px;
+  margin: 30px;
+}
+
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+/* Class Selector */
+.style-me1 {
+  color: red;
+}
+
+/* ID Selector */
+#style-me2 {
+  color: blue;
+}
+
+/* Specific Selector */
+.style-me1#style-me2 {
+  color: purple;
+}
+
+/* Descendant Combinator */
+.by p {
+  background: red;
+}
+
+/* Child Combinator */
+.my-children-are-styled > p {
+  background: lightgreen;
+}
+
+/* General styles for the box */
+.box {
+  background-color: lightblue; /* Background color to see where the box starts and finishes */
+  margin: 20px; /* Using 1-value syntax */
+  padding: 20px 10px 15px 5px; /* Using 4-value syntax */
+  width: 300px; /* Width using pixels */
+  height: 200px; /* Height using pixels */
+  border: 10px solid red; /* Solid border */
+  border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  overflow: hidden; /* Prevents content overflow */
+  outline: 10px solid green; /* Wide outline that doesn't affect layout */
+  background-image: url("./assets/images/img1.png"); /* Background image */
+  background-size: cover; /* Background covers the entire box */
+  background-repeat: no-repeat; /* No repeating of the background image */
+  background-position: center; /* Centering the background image */
+}
+
+/* Variations to demonstrate other techniques */
+.box.alt {
+  margin: 0 auto; /* 2-value syntax for horizontal centering */
+  padding: 10%; /* 1-value syntax using percentage */
+  width: 50vw; /* Width using viewport width */
+  height: 50vh; /* Height using viewport height */
+  border: 10px dashed blue; /* Dashed border */
+  overflow: auto; /* Overflow with scrollbars if needed */
+  box-sizing: content-box; /* Excludes padding and border from total width and height */
+}
+
+/* Example of a circular box */
+.box.circle {
+  width: 150px; /* Width */
+  height: 150px; /* Height */
+  border-radius: 50%; /* Makes it circular */
+  padding: 10px; /* Padding to prevent text cut-off */
+}
+
+/* Absolute Positioning */
+.position-absolute {
+  position: absolute; /* Use absolute positioning */
+  top: 0; /* Fix to the top of the page */
+  left: 20px; /* Adjust left position */
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent red for visibility */
+  width: 200px; /* Set a width for the absolute element */
+}
+
+/* Relative Positioning */
+.position-relative {
+  position: relative; /* Use relative positioning */
+  background-color: rgba(
+    0,
+    255,
+    0,
+    0.5
+  ); /* Semi-transparent green for visibility */
+  padding: 20px; /* Add some padding */
+  margin-bottom: 50px; /* Space below for visibility */
+}
+
+/* Sticky Positioning */
+.position-sticky {
+  position: sticky; /* Use sticky positioning */
+  top: 0; /* Change this value to set where it 'sticks' */
+  background-color: rgba(
+    0,
+    0,
+    255,
+    0.5
+  ); /* Semi-transparent blue for visibility */
+  padding: 10px; /* Add some padding */
+}
+
+.text-style {
+  color: #333333; /* Set font color */
+  font-size: 16px; /* Font size using pixels */
+  line-height: 1.5; /* Line height using unitless value */
+  font-weight: bold; /* Font weight using keyword */
+}
+
+/* Additional examples to experiment with */
+.text-style.experiment {
+  font-size: 2rem; /* Font size using rem */
+  line-height: 24px; /* Line height using pixels */
+  font-weight: 600; /* Font weight using numeric value */
+}
+
+.text-style.another-experiment {
+  font-size: 20px; /* Another font size in pixels */
+  line-height: 2; /* Line height with a unitless value */
+  font-weight: 400; /* Regular weight */
+}
+
+/* Basic link styles for all states */
+a,
+a:link {
+  color: #007bff; /* Default link color */
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Styles for active links */
+a:hover,
+a:active,
+a:focus {
+  color: #0056b3; /* Darker shade for hover, active, and focus states */
+  text-decoration: underline; /* Underline on hover/active */
+}
+
+/* Styles for visited links */
+a:visited {
+  color: #6c757d; /* Different color for visited links */
+  font-style: italic; /* Italic font style for visited links */
+}
+
+/* Styles for the calc-style class */
+.calc-style {
+  width: 100vw; /* Fixed width of 100% of the viewport width */
+  background-color: rgba(
+    255,
+    165,
+    0,
+    0.5
+  ); /* Background color for visibility */
+}
+
+/* Adjusting width to be 100px less than the full viewport width */
+.calc-style.adjusted {
+  width: calc(100vw - 100px); /* 100px less than the total width */
+}
+
+/* Styles for the fixed-width column */
+.fixed-width-col {
+  width: 350px; /* Fixed width of 350px */
+  display: inline-block; /* Allows it to be side-by-side with fluid-col */
+  background-color: rgba(0, 128, 0, 0.5); /* Background color for visibility */
+}
+
+/* Styles for the fluid column */
+.fluid-col {
+  display: inline-block; /* Allows it to be side-by-side with fixed-width-col */
+  width: calc(100% - 350px); /* Dynamically calculated width */
+  background-color: rgba(0, 0, 255, 0.5); /* Background color for visibility */
+}
